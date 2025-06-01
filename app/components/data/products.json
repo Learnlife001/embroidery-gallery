@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name_en": "Floral Red Embroidery",
+    "name_zh": "红色花卉刺绣",
+    "image": "/images/floral-red.jpg",
+    "quantity": "Available",
+    "price": "Contact for pricing"
+  },
+  {
+    "id": 2,
+    "name_en": "Golden Leaf Pattern",
+    "name_zh": "金色叶子图案",
+    "image": "/images/golden-leaf.jpg",
+    "quantity": "Available",
+    "price": "Contact for pricing"
+  },
+  {
+    "id": 3,
+    "name_en": "Blue Swirl Design",
+    "name_zh": "蓝色旋涡图案",
+    "image": "/images/blue-swirl.jpg",
+    "quantity": "Available",
+    "price": "Contact for pricing"
+  },
+  {
+    "id": 4,
+    "name_en": "Oriental Landscape Embroidery",
+    "name_zh": "东方景刺绣",
+    "image": "/images/oriental-landscape.jpg",
+    "quantity": "Available",
+    "price": "Contact for pricing"
+  },
+  {
+  "id": 5,
+  "name_en": "White Floral Embroidery",
+  "name_zh": "白色花卉刺绣",
+  "image": "/images/white-floral-embroidery.jpg",
+  "quantity": "Available",
+  "price": "Contact for pricing"
+},
+{
+  "id": 6,
+  "name_en": "Blue-Grey Floral Embroidery",
+  "name_zh": "蓝灰色花卉刺绣",
+  "image": "/images/blue-grey-floral.jpg",
+  "quantity": "Available",
+  "price": "Contact for pricing"
+},
+{
+  "id": 7,
+  "name_en": "Cream Floral Embroidery",
+  "name_zh": "米色花卉刺绣",
+  "image": "/images/cream-floral-embroidery.jpg",
+  "quantity": "Available",
+  "price": "Contact for pricing"
+},
+{
+  "id": 8,
+  "name_en": "Color Dot Embroidery",
+  "name_zh": "彩色点刺绣",
+  "image": "/images/color-dot-embroidery.jpg",
+  "quantity": "Available",
+  "price": "Contact for pricing"
+},
+{
+  "id": 9,
+  "name_en": "Gray Chrysanthemum Embroidery",
+  "name_zh": "灰色菊花刺绣",
+  "image": "/images/gray-chrysanthemum-embroidery.jpg",
+  "quantity": "Available",
+  "price": "Contact for pricing"
+}
+]
