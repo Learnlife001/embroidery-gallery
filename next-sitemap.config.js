@@ -1,8 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://embroidery-gallery.vercel.app', // your production domain
+  siteUrl: 'https://embroidery-gallery.vercel.app',
   generateRobotsTxt: true,
-  sitemapSize: 7000,
-  changefreq: 'weekly',
-  priority: 0.7,
-};
+  sitemapSize: 5000,
+}
