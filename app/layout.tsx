@@ -1,7 +1,7 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import '../i18n';
+import "../i18n";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,23 +13,36 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+// ✅ single metadata object
 export const metadata: Metadata = {
-  title: 'Embroidery Gallery | Factory Direct Designs',
-  description: 'Browse unique factory-direct embroidery fabrics. Contact via WeChat or WhatsApp to order.',
+  metadataBase: new URL("https://embroidery-gallery.vercel.app"),
+  title: "Embroidery Gallery – Handmade Designs",
+  description:
+    "Browse our embroidery gallery with unique, handmade designs and patterns.",
+  keywords: ["embroidery", "handmade", "gallery", "crafts", "patterns"],
   openGraph: {
-    title: 'Embroidery Gallery',
-    description: 'Beautiful embroidery fabrics, direct from factory. Contact to order.',
+    title: "Embroidery Gallery – Handmade Designs",
+    description:
+      "Explore unique handmade embroidery fabrics, crafts, and designs.",
+    url: "https://embroidery-gallery.vercel.app/",
+    siteName: "Embroidery Gallery",
     images: [
       {
-        url: '/images/preview-cover.jpg',
+        url: "/images/preview.png", // make sure this image exists in /public/images
         width: 800,
         height: 600,
-        alt: 'Embroidery Preview'
-      }
+        alt: "Embroidery Preview",
+      },
     ],
-    type: 'website'
+    locale: "en_US",
+    type: "website",
   },
-  viewport: 'width=device-width, initial-scale=1'
+};
+
+// ✅ viewport export stays separate
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
@@ -39,9 +52,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} min-h-screen`}>
         {children}
       </body>
     </html>

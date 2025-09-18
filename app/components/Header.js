@@ -10,19 +10,26 @@ const Header = () => {
   };
 
   return (
-    <header style={{
-  padding: '1rem 2rem',
-  backgroundColor: '#222', // darker gray
-  color: '#fff',            // white text
-  display: 'flex',
-  justifyContent: 'space-between',
-  alignItems: 'center',
-  borderBottom: '1px solid #444'
-}}>
-      <h2 style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>{t('title')}</h2>
-      <div>
-        <button onClick={() => switchLanguage('en')} style={{ marginRight: '10px' }}>English</button>
-        <button onClick={() => switchLanguage('zh')}>中文</button>
+    <header className="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-cyan-500 via-blue-600 to-indigo-600 text-white shadow-md">
+      <div className="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
+        {/* Centered Title */}
+        <h2 className="text-2xl font-bold text-center flex-1">{t('title')}</h2>
+
+        {/* Right-Aligned Language Buttons */}
+        <div className="flex gap-2 justify-end">
+          <button
+            onClick={() => switchLanguage('en')}
+            className="bg-white text-black font-medium px-3 py-1 rounded hover:bg-gray-200 transition"
+          >
+            EN
+          </button>
+          <button
+            onClick={() => switchLanguage('zh')}
+            className="bg-white text-black font-medium px-3 py-1 rounded hover:bg-gray-200 transition"
+          >
+            中文
+          </button>
+        </div>
       </div>
     </header>
   );

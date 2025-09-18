@@ -13,23 +13,28 @@ const ProductCard = ({ product }) => {
   return (
     <div
       style={{
-        border: '1px solid #ddd',
+        border: '1px solid #333',
         padding: '1rem',
-        borderRadius: '8px',
+        borderRadius: '12px',
         backgroundColor: '#111',
         color: '#fff',
         position: 'relative',
+        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.4)',
       }}
     >
       <img
         src={product.image}
-        alt={product.name}
-        style={{ width: '100%', borderRadius: '4px' }}
+        alt={product.name_en}
+        style={{
+          width: '100%',
+          height: '220px',
+          objectFit: 'cover',
+          borderRadius: '8px',
+          marginBottom: '10px',
+        }}
       />
       <h3>{i18n.language === 'zh' ? product.name_zh : product.name_en}</h3>
       <p>{t('available')}: {t(product.quantity)}</p>
-
-
 
       <div
         style={{
@@ -45,7 +50,6 @@ const ProductCard = ({ product }) => {
           style={{ position: 'relative', cursor: 'pointer' }}
         >
           <SiWechat size={24} />
-
           {showQR && (
             <div
               style={{

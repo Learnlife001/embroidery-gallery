@@ -6,11 +6,13 @@ import Gallery from './components/Gallery';
 
 export default function Home() {
   return (
-    <main style={{ backgroundColor: '#000', minHeight: '100vh' }}>
+    <>
       <Header />
-      <section style={{ padding: '2rem', maxWidth: '1200px', margin: '0 auto' }}>
-        <Gallery />
-      </section>
-    </main>
+      <main className="pt-32 px-6">
+        <section className="py-8 max-w-6xl mx-auto">
+          <Gallery />
+        </section>
+      </main>
+    </>
   );
 }
